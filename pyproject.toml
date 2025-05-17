@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-downloader"
+description = "Custom ComfyUI Nodes for verifing needed files/models are present per workflow, can download if missing."
+version = "0.1.0"
+license = { file = "LICENSE" }
+dependencies = ["tqdm","requests"]
+
+[project.urls]
+Repository = "https://github.com/stavsap/comfyui-downloader"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "stavsap"
+DisplayName = "comfyui-downloader"
+Icon = ""
