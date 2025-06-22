@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-downloader"
 description = "Custom ComfyUI Nodes for verifing needed files/models are present per workflow, can download if missing."
-version = "0.1.0"
+version = "0.1.1"
 license = { file = "LICENSE" }
 dependencies = ["tqdm","requests"]
 

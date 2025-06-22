@@ -84,9 +84,10 @@ class Downloader:
 
     def downloader(self, url, path, file_name, force, token=None, summary=None):
         # TODO handle token if needed.
+        if token == "":
+            token = None
         if force:
             delete(file_name, path)
-
         if summary is None:
             summary = []
         if not is_exist(file_name, path):
@@ -99,7 +100,7 @@ class Downloader:
         return (summary, )
 
     @classmethod
-    def IS_CHANGED(s, url, path, file_name, token, summary=None):
+    def IS_CHANGED(s, url, path, file_name, force, token, summary=None):
         return random.uniform(0, 100000)
 
 class DownloadSummaryParser:
